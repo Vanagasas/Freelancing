@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Alata', sans-serif;
+}
+html{
+    height: 100%;
+}
+main{
+    background-image: linear-gradient(90deg, #007EA7, #00A8E8);
+    width: 100%;
+    display: grid;
+    align-items: center;
+    height: 100%;
+}
+.finished-container{
+    display: block;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    background-color: #fff;
+    padding: 1.5em;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+}
+.finished-container > h1{
+    padding-bottom: 1em;
+}
+.field{
+    padding: .5em 1em;
+}
+.fa-star{
+    cursor: pointer;
+}
+button{
+    font-size: 1em;
+    padding: 0.5em;
+    margin: 1em 0;
+    background-color: #00A8E8;
+    color: #fff;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: #007EA7;
+}

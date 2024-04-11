@@ -1,0 +1,114 @@
+/*Website setup*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Alata', sans-serif;
+}
+body{
+    background-image: linear-gradient(90deg, #007EA7, #00A8E8);  
+}
+
+/*Header*/
+.main-header{
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+}
+nav{
+    float: right;
+    padding: 1em;
+    position: relative;
+    right: 2em;
+}
+.nav-button{
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 0.75em;
+    color: #000;
+    text-decoration:none;
+    display: inline-block;
+    transition: 0.2s;
+}
+.nav-button:hover{
+    color: #00a8e8;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-menu li{
+    display: block;
+    background-color: #fff;
+}
+.dropdown-menu li:hover{
+    background-color: #eee;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    left: 75%;
+    top: 3.5em;
+    min-width: 120px;
+}
+
+main{
+    background-color: #fff;
+    word-wrap: break-word;
+    width: 80%;
+    margin: 10em auto;
+    padding: 2em;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+}
+.description{
+    margin-top: 5em;
+}
+h3{
+    font-weight: 400;
+}
+.highlight-line{
+    width: 90%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 2em auto;
+}
+.user-post{
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+    color: #00A8E8;
+    transition: 0.5s;
+}
+a:hover{
+    color: #000;
+}
+textarea{
+    width: 90%;
+    border: 1px solid #00A8E8;
+    margin: 1em 0;
+    display: block;
+    padding: 0.5em;
+}
+input{
+    padding: 0.5em;
+    border: 1px solid #00A8E8;
+}
+button{
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    background-color: #00A8E8;
+    color: #fff;
+    transition: 0.25s;
+}
+button:hover{
+    background-color: #007EA7;
+}
+.error{
+    color: red;
+}
+.applied{
+    margin-bottom: 1em;
+}

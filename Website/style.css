@@ -1,0 +1,270 @@
+/*Website setup*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Alata', sans-serif;
+}
+body{
+    background: rgb(250,250,250);
+}
+
+/*Header*/
+.main-header{
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    background-color: rgba(0,0,0,0);
+    top: 0;
+}
+nav{
+    float: right;
+    padding: 1em;
+    position: relative;
+    right: 2em;
+}
+.nav-button{
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 0.75em;
+    color: #fff;
+    text-decoration:none;
+    display: inline-block;
+    transition: 0.2s;
+}
+.nav-button:hover{
+    color: #00a8e8;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-menu li{
+    display: block;
+    background-color: #fff;
+}
+li > .nav-button{
+    color:#000;
+}
+.dropdown-menu li:hover{
+    background-color: #eee;
+}
+.dropdown-menu{
+    color: #000;
+    display: none;
+    position: absolute;
+    left: 75%;
+    top: 3.5em;
+    min-width: 120px;
+}
+
+.scrolled-header{
+    background-color: white;
+    
+}
+.scrolled-header-text{
+    color: black;
+}
+
+/*Animated display*/
+#canvas-display{
+    background-color: #000;
+    width: 100%;
+    height: 35em;
+}
+.canvas-inner-content{
+    background-color: rgba(0,0,0,0);
+    z-index: 1;
+    position: absolute;
+    top: 15em;
+    left: 7.5em;
+}
+.canvas-inner-header{
+    color: white;
+    font-size: 2em;
+    padding: 0.1em;
+}
+.canvas-inner-button{
+    background-color: rgba(255,255,255,0.1);
+    font-size: 1em;
+    color: white;
+    border: 1px solid white;
+    margin: 0.75em;
+    margin-left: 0;
+    padding: 0.75em;
+    transition: 0.25s;
+}
+.canvas-inner-button:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+.canvas-button{
+    display: inline;
+}
+
+/*Suggested projects*/
+.suggested-project-display{
+    padding: 3em;
+}
+.suggested-project-header{
+    color: #1C1C1C;
+}
+.suggested-project-selection{
+    width: 90%;
+    margin: 2em auto;
+    font-size: 1.25em;
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    grid-gap: 1em;
+}
+.suggested-project-image{
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    height:15em;
+    display:block;
+    position:relative;
+}
+.suggested-project-overlay{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    opacity:0;
+    transition:0.5s;
+    color:white;
+}
+.suggested-project-image:hover > .suggested-project-overlay{
+    background-color: rgba(0,0,0,0.5);
+    opacity:0.9;
+    display:inline-block; 
+}
+.suggested-project-border{
+    border: 0.05em solid white;
+    margin: 1.25em;
+    padding: 1em;
+}
+.suggested-project-text{
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 95%;
+    position: relative;
+    top: 1.5em;
+    margin-bottom: 5em;
+    line-height: 5em;
+}
+.suggested-project-logo{
+    background-image: url('https://res.cloudinary.com/vanagasa/image/upload/v1616001866/logo_hpi6yl.png');
+}
+.suggested-project-website{
+    background-image: url('https://res.cloudinary.com/vanagasa/image/upload/v1616002583/website_nrvnxk.webp');
+}
+.suggested-project-app{
+    background-image: url('https://res.cloudinary.com/vanagasa/image/upload/v1616003067/mobile-app_whxiip.jpg');
+}
+.suggested-project-illustration{
+    background-image: url('https://res.cloudinary.com/vanagasa/image/upload/v1616003526/illustrations_ku4iyf.jpg');
+}
+.suggested-project-writing{
+    background-image: url('https://res.cloudinary.com/vanagasa/image/upload/v1616003810/book_siwzcw.jpg');
+}
+.suggested-project-software{
+    background-image: url('https://res.cloudinary.com/vanagasa/image/upload/v1616003980/software_opinkf.jpg');
+}
+.suggested-link{
+    text-decoration: none;
+    color: #000;
+}
+.overlay-text{
+  margin:1.5em;
+}
+.see-more-projects{
+    text-align: center;
+}
+.see-more-projects-button{
+    background-color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.75em;
+    border: 1px solid #1C1C1C;
+    color: #1C1C1C;
+    transition: 0.5s;
+}
+.see-more-projects-button:hover{
+    color: #00A8E8;
+    border: 1px solid #00A8E8;
+}
+
+.reasons-to-use{
+    padding: 3em;
+    color: #1C1C1C;
+}
+.reasons-to-use-points{
+    padding: 1.5em;
+}
+.reasons-to-use-paragrapghs{
+    display: inline;
+    padding-left: 1em;
+    font-size: 1.2em;
+}
+.reasons-to-use-checkmark{
+    color: #00a8e8;
+    font-size: 1.2em;
+}
+
+.find-the-freelancers{
+    position: relative;
+    background-image: url('https://res.cloudinary.com/vanagasa/image/upload/v1617205404/cyber3_peeiht.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25em;
+    text-align: center;
+}
+.find-the-freelancers-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+}
+.find-the-freelancers-container{
+    padding: 7.5em;
+}
+.find-the-freelancers-header{
+    color: #fff;
+    opacity: 0.9;
+}
+.find-the-freelancers-button{
+    position: relative;
+    top: 5em;
+    background-color: rgba(0,0,0,0);
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.75em;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: 0.5s;
+}
+.find-the-freelancers-button:hover{
+    color: #00A8E8;
+    border: 1px solid #00A8E8;
+}
+footer{
+    background-color: #007EA7;
+}
+.footer-socials{
+    text-align: center;
+    font-size: 2em;
+
+}
+.socials-icon{
+    padding: 1em;
+    transition: 0.5s;
+}
+.socials-icon:hover{
+    color: #fff;
+}

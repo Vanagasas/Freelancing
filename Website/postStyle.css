@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Alata', sans-serif;
+}
+main{
+    background-image: linear-gradient(90deg, #007EA7, #00A8E8);
+    width: 100%;
+}
+.content{
+    padding: 5em 0;
+    width: 60%;
+    margin: auto;
+}
+.post-text{
+    color: #eee;
+}
+.project-information{
+    width: 100%;
+    background: #fff;
+    margin: 2em 0;
+    padding: 1.5em;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+}
+.project-label{
+    display: block;
+    font-size: 1.25em;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.project-input{
+    border: 1px solid #666;
+    width: 100%;
+    font-size: 1em;
+    padding: 0.5em;
+    margin: 1em 0;
+}
+.project-input:focus{
+    border: 1px solid #00a8e8;
+}
+.nested-input{
+    margin: 1em 0;
+}
+.skill-container{
+    height: 2.5em;
+}
+.skill-input{
+    width: 89%;
+}
+.add-skill-button{
+    font-size: 1em;
+    height: 100%;
+    width: 10%;
+    margin: 0;
+    background-color: #00A8E8;
+    color: #fff;
+    transition: 0.5s;
+}
+.add-skill-button:hover{
+    background-color: #007EA7;
+}
+.picked-skill{
+    border: 1px solid #666;
+    padding: 0.25em;
+    display: inline-block;
+    margin: 0.5em 0.25em 0 0;
+}
+.picked-skill:hover{
+    border: 1px solid #00a8e8;
+    color: #00a8e8;
+}
+.close-skill{
+    cursor: pointer;
+}
+.post-button{
+    font-size: 1em;
+    padding: 0.5em;
+    margin: 1em 0;
+    background-color: #00A8E8;
+    color: #fff;
+    transition: 0.5s;
+}
+.post-button:hover{
+    background-color: #007EA7;
+}
+.payment-suggestion{
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 0.5em;
+    margin: 0.5em;
+    cursor: pointer;
+}
+.payment-suggestion:hover{
+    border: 1px solid #00A8E8;
+    color: #00A8E8;
+    background-color: rgba(0, 168, 232, 0.1);
+}
+.selected-payment{
+    border: 1px solid #00A8E8;
+    color: #00A8E8;
+    background-color: rgba(0, 168, 232, 0.1);
+}
+.note{
+    color:red;
+    font-size: 0.85em;
+    padding: 0.5em 0;
+}
+.type-two{
+    width: 49%;
+}
+#category{
+    margin: 1em 0;
+}
